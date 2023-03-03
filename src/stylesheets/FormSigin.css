@@ -1,0 +1,103 @@
+
+
+.container-FormSigin{
+    min-width: 500px;
+    min-height: 700px;
+    background-color: #222831;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 25% 75% ;
+    grid-template-areas:    "icon"
+                            "form"
+}
+.icon-FormSigin{
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-FormSigin{
+    grid-area: form;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:    "email"
+                            "name"
+                            "password"
+                            "buttons";
+}
+.input-email-FormSigin{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-name-FormSigin{
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-password-FormSigin{
+    grid-area: password;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-buttons-FormSigin{
+    grid-area: buttons;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+}
+.input-email-FormSigin input,
+.input-name-FormSigin input,
+.input-password-FormSigin input,
+.container-buttons-FormSigin input{
+    width: 70%;
+    height:40px;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+    border: none;
+    padding: 0 5px;
+}
+.button-FormSigin  button{
+    background-color: #00ADB5;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.error-input-name{
+    color: rgb(248, 68, 68);
+    font-family: 'Roboto', sans-serif;
+}
+.button-FormSigin  button:hover{
+    background-color: #00b56d;
+}
+.Link-FormSigin{
+    background-color: #00ADB5;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .Link-FormSigin:hover{
+    background-color: #00b56d;
+  }

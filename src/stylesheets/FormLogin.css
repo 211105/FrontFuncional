@@ -1,0 +1,100 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container-FormLogin {
+    min-width: 500px;
+    min-height: 700px;
+    background-color: #222831;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 25% 60% 15%;
+    grid-template-areas: "icon"
+        "form"
+        "link";
+}
+
+.icon-FormLogin {
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-FormLogin {
+    grid-area: form;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "email"
+        "password"
+        "buttons";
+}
+
+.input-email-FormLogin {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-password-FormLogin {
+    grid-area: password;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-email-FormLogin input,
+.input-password-FormLogin input {
+    width: 70%;
+    height:40px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
+    border: none;
+    padding: 0 5px;
+}
+
+.container-buttons-FormLogin {
+    grid-area: buttons;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.error-input-email, .error-input-password{
+    color: rgb(248, 68, 68);
+    font-family: 'Roboto', sans-serif;
+}
+.button-FormLogin  button{
+    background-color: #00ADB5;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.button-FormLogin  button:hover{
+    transition: 0.2s;
+    background-color: #00b56d;
+}
+
+.link-forgotpassword-Formlogin {
+    grid-area: link;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-forgotpassword-Formlogin a {
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+.linka-div{
+     color: #FFFF;
+}
+.linka:hover{
+   font-size: 18px;
+   transition: 0.2s;
+}

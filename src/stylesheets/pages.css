@@ -1,0 +1,23 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+.pages-structure-container{
+    width: 100%;
+    height: 1100px;
+    display: grid;
+    grid-template-rows: 6% 94%;
+    grid-template-areas: "header"
+                            "main";
+}
+.pages-structure-container-header{
+    grid-area: header;
+}
+.pages-structure-container-main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393E46;
+}

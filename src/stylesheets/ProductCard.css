@@ -1,0 +1,91 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container-ProductCard{
+    display: grid;
+    
+    min-width: 330px;
+    min-height: 340px;
+    background-color: #DFF6FF;
+    border-radius:15px;
+    margin: 30px 0 30px 3% ;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60% 10% 20% 10%;
+    grid-template-areas: "img img"
+                            "title title"
+                            "description description"
+                            "price stock";
+
+}
+
+.img-productCard{
+    grid-area: img;
+    padding: 5px;
+}
+.img-productCard img{
+    width: 330px;
+    height: 188px;
+    object-fit:scale-down;
+    object-position:center;
+    
+}
+.title-productCard{
+    grid-area: title;
+    text-align: center;
+    font-size: 20px;
+}
+.description-productCard{
+    grid-area: description;
+    padding: 3px;
+    font-size: small;
+    text-align: center;
+}
+.description-productCard p{
+    width: 330px;
+    height: 45.5px;
+}
+.price-productCard{
+    grid-area: price;
+    padding: 4px;
+    text-align: center;
+}
+.stock-productCard{
+    grid-area: stock;
+    padding: 4px;
+    text-align: center;
+}
+.prueba-edit-1, .prueba-edit-2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px 0 0 calc(50% - 20px);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.prueba-edit-1:hover{
+    background-color: red;
+    width: 31px;
+    height: 31px;
+    transition: 0.2s;
+    
+}
+.prueba-edit-2:hover{
+    background-color: #47B5FF;
+    width: 31px;
+    height: 31px;
+    transition: 0.2s;
+}
+.modal-update{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}

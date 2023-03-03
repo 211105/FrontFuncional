@@ -1,0 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.container-Dashboard{
+    width: 100%;
+    height: 100vh;
+    max-height: 1100px;
+    display: grid;
+    grid-auto-columns: minmax(160px, 12%) 88%;
+    grid-template-areas: "navbar main" ;
+}
+.navbar-Dashboard{
+    grid-area: navbar;
+    
+}
+
+/*  */
+.main-products-Dashboard{
+    width: 100%;
+    height:100% ;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y:scroll;
+}
+/*  */
+.main-products-add-Dashboard{
+    width: 100%;
+    height:100% ;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
